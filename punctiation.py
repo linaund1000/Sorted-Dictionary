@@ -7,7 +7,7 @@
 
 -logic
 1 splitting sentences 
-    every dot is the end for the sentence. and we will split from there
+    dots are end for the sentences and we will split sentences from there
 
 
 
@@ -21,7 +21,7 @@ then ""join(list_of_sentences)
 def sentenceVerification(sentence):
     """sentence has to have space before starting except first sentence"""
     s = []
-    for i in sentence[first_letter_ident(sentence):]:
+    for i in sentence[first_letter_ident(sentence):]:#to understand where is the beginning of the sentence
         s.append(i)
     
     for i in s:
